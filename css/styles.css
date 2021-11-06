@@ -172,6 +172,7 @@ object-position: 65%;
   margin: auto;
   text-align: left;
   line-height: 2;
+  font-family: 'Poppins', sans-seriff;
 }
 
 
@@ -207,6 +208,7 @@ object-position: 65%;
   background-color: #66BFBF;
   padding: 2rem 0;
   margin: auto;
+  font-family: 'Poppins', sans-seriff;
 }
 
 .footer-link{
@@ -231,6 +233,7 @@ object-position: 65%;
 .contact-me{
   margin: 10px auto 50px auto;
   width: 50%;
+  font-family: 'Poppins', sans-seriff;
 }
 
 
