@@ -1,16 +1,9 @@
+/*  ----------------------------------------- General ---------------------------------------------------------- */
 body{
 color: #40514E;
 margin: 0;
 text-align: center;
 font-family: 'Merriweather Sans', sans-seriff;
-}
-
-.top-container {
-  background-color: #E4F9F5;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 50px;
-  position: relative;
 }
 
 h1{
@@ -31,7 +24,13 @@ h2{
 h3{
   color:#11999E;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
   font-weight: 900;
+}
+
+p{
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
 }
 
 
@@ -39,28 +38,29 @@ a{
   color:#11999E;
 }
 
-.middle-container {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  font-family: 'Poppins', sans-seriff;
-  font-size: large;
-  width: 1800px
+hr{
+  color: #EAF6F6;
+  border-style: dotted none none none;
+  border-width: 10px;
+  margin: 50px auto;
+  width: 8%;
 }
 
-.image{
-height: 300px;
-width: 300px;
-border-radius: 100%;
-margin-top: 3rem;
-object-fit: cover;
-object-position: 65%;
+
+/* ------------------------------------------ Top container ---------------------------------------------------------- */
+
+.top-container {
+  background-color: #E4F9F5;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 50px;
+  position: relative;
 }
+
 
 .pro {
   text-decoration: underline;
 }
-
 
 
 .top-cloud{
@@ -79,44 +79,114 @@ object-position: 65%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  height: 600px;
-  width: 1500px;
+  height: auto;
+  width: auto;
   object-fit: cover;  
   padding: 0;
   border: 0;
-  zoom: 0.70;
+  zoom: 1;
 }
 
+@media only screen and (max-width: 1000px) {
+  .top-cloud {
+    zoom:1;
+  }
+  
+  .bottom-cloud {
+    zoom: 1;
+  }
+  
+  .mountain {
+    zoom: 0.95;
+  }
+}
+
+/* ---------------------------------------------------- Middle container --------------------------------------- */
+
+.middle-container {
+  text-align: center;
+  font-family: 'Poppins', sans-seriff;
+  font-size: large;
+  position: relative;
+}
+
+.profile{
+  width: 40%;
+  margin:auto
+}
+
+
+.image{
+height: 300px;
+width: 300px;
+border-radius: 100%;
+margin-top: 3rem;
+object-fit: cover;
+object-position: 65%;
+}
+
+
 .skill-row{
-  width: 30%;
+  width: 35%;
   margin: 100px auto;
   text-align: left;
   line-height: 2;
 }
 
+@media only screen and (max-width: 1000px) {
+  .skill-row{
+    width: 70%;
+  }
+  .profile{
+    width: 70%;
+  }
+  .project-row{
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .skill-row{
+    width: 80%;
+  }
+  .profile{
+    width: 80%;
+  }
+  .project-row{
+    width: 80%;
+  }
+}
+
 .skill-left {
-  /* width: 8rem; */
   float: left;
   margin-right: 30px;
 }
 
 .skill-right {
-  /* width: 8rem; */
   float: right;
   margin-left: 30px;
 }
 
-hr{
-  color: #EAF6F6;
-  border-style: dotted none none none;
-  border-width: 10px;
-  margin: 50px auto;
-  width: 8%;
+.project-row{
+  width: 65%;
+  margin: auto;
+  text-align: left;
+  line-height: 2;
 }
 
-.contact-me{
-  margin: 10px 0 50px 0;
+
+.play-btn{
+  background-color: #11999E;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  padding: .3rem 0.8rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
 }
+
 
 .btn{
   background-color: #11999E;
@@ -130,9 +200,13 @@ hr{
   margin-top: 2.5rem;
 }
 
+
+/* ------------------------------------------- Bottom Container --------------------------------------------------- */
+
 .bottom-container{
   background-color: #66BFBF;
   padding: 2rem 0;
+  margin: auto;
 }
 
 .footer-link{
@@ -152,4 +226,30 @@ hr{
 
 .heart{
   color: red
+}
+
+.contact-me{
+  margin: 10px auto 50px auto;
+  width: 50%;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .contact-me{
+    width: 60%;
+  }
+  .footer{
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-me{
+    width: 80%;
+  }
+  .footer{
+    width: 80%0%;
+    margin: auto;
+  }
 }
