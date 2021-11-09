@@ -46,6 +46,10 @@ hr{
   width: 8%;
 }
 
+.wiki-links{
+  text-decoration: none;
+}
+
 
 /* ------------------------------------------ Top container ---------------------------------------------------------- */
 
@@ -122,7 +126,7 @@ width: 300px;
 border-radius: 100%;
 margin-top: 3rem;
 object-fit: cover;
-object-position: 65%;
+/* object-position: 100% 0%; */
 }
 
 
